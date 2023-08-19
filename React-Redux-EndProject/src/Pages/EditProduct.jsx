@@ -1,6 +1,15 @@
-import React from 'react'
+import {useEffect} from 'react'
+import {useNavigate} from "react-router-dom";
 
-function EditProduct() {
+const EditProduct = (props) => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!props.isAuthenticated) {
+      navigate('/login');
+    }
+  }, []);
+
   return (
     <div>EditProduct</div>
   )

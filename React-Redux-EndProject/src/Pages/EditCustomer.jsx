@@ -1,6 +1,15 @@
-import React from 'react'
+import {useNavigate} from "react-router-dom";
+import {useEffect} from "react";
 
-function EditCustomer() {
+const EditCustomer = (props) => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!props.isAuthenticated) {
+      navigate('/login');
+    }
+  }, []);
+
   return (
     <div>EditCustomer</div>
   )
