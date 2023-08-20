@@ -9,7 +9,7 @@ const Customers = (props) => {
         if (!props.isAuthenticated) {
             navigate('/login');
         }
-    }, []);
+    });
 
   return (
           <div className="container customers">

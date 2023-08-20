@@ -8,7 +8,7 @@ const Purchases = (props) => {
     if (!props.isAuthenticated) {
       navigate('/login');
     }
-  }, []);
+  });
 
   return (
     <div className="container">Purchases</div>

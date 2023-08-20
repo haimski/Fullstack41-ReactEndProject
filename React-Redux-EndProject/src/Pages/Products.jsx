@@ -8,7 +8,7 @@ const Products = (props) => {
         if (!props.isAuthenticated) {
             navigate('/login');
         }
-    }, []);
+    });
 
     return (
     <div className="container products">

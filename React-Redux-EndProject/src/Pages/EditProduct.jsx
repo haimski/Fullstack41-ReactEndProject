@@ -8,7 +8,7 @@ const EditProduct = (props) => {
     if (!props.isAuthenticated) {
       navigate('/login');
     }
-  }, []);
+  });
 
   return (
     <div>EditProduct</div>

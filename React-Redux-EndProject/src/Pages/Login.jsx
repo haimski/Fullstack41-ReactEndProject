@@ -4,11 +4,12 @@ const Login = ({setIsAuthenticated}) => {
     const winHeight = window.innerHeight;
     const winWidth = window.innerWidth;
     const formWidth = 400;
+    const navHeight = 56;
     const style = {
         margin: '0 auto',
         width: formWidth + 'px',
         position: 'absolute',
-        top: winHeight / 2 - (formWidth / 2),
+        top: winHeight / 2 - (formWidth / 2) + navHeight,
         left: winWidth / 2 - (formWidth / 2),
         borderBottom: '1px solid #cdcdcd'
     }
