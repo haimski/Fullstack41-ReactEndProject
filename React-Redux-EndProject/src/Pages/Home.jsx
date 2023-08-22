@@ -5,6 +5,7 @@ import productsImg from './../assets/products.jpg';
 import purchasesImg from './../assets/sales.jpg';
 
 const Home = (props) => {
+  const navigate = useNavigate();
   const style = {
     margin: '3em auto'
   }
@@ -44,7 +45,7 @@ const Home = (props) => {
             <div className="card-body">
               <h5 className="card-title">Purchases</h5>
               <p className="card-text">Manage your sales</p>
-              <Link to={'/purchases'} className={'btn btn-primary'}>Go To Purchases</Link>
+              <Link to={'/purchases'} className="btn btn-primary">Go To Purchases</Link>
             </div>
           </div>
         </div>
